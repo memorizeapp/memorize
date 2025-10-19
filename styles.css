@@ -54,6 +54,13 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-logo:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo-image {
@@ -202,238 +209,15 @@ body {
     opacity: 0.8;
 }
 
-/* Phone Mockup */
-.phone-mockup {
-    position: relative;
+/* iPhone Screenshot */
+.iphone-screenshot {
     width: 300px;
-    height: 600px;
-    background: #1f2937;
-    border-radius: 50px;
-    padding: 8px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-}
-
-.phone-screen {
-    width: 100%;
-    height: 100%;
-    background: white;
-    border-radius: 42px;
-    overflow: hidden;
-    position: relative;
-}
-
-.app-preview {
-    padding: 20px 16px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: #f8fafc;
-}
-
-.app-header {
-    margin-bottom: 1rem;
-}
-
-.app-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
-}
-
-.search-bar {
-    background: white;
-    border-radius: 8px;
-    padding: 8px 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.search-icon {
-    font-size: 0.9rem;
-    color: #64748b;
-}
-
-.search-placeholder {
-    color: #94a3b8;
-    font-size: 0.9rem;
-}
-
-.app-content {
-    flex: 1;
-    overflow-y: auto;
-}
-
-.section-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-    margin-top: 16px;
-}
-
-.section-header:first-child {
-    margin-top: 0;
-}
-
-.section-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #64748b;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.section-indicator {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
-
-.section-indicator.red {
-    background: #ef4444;
-}
-
-.section-indicator.blue {
-    background: #3b82f6;
-}
-
-.memory-card {
-    background: white;
-    border-radius: 12px;
-    margin-bottom: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e2e8f0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.memory-card:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.due-card {
-    border-left: 4px solid #ef4444;
-}
-
-.upcoming-card {
-    border-left: 4px solid #3b82f6;
-}
-
-.card-content {
-    padding: 16px;
-}
-
-.card-text {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #1e293b;
-    margin-bottom: 8px;
-    line-height: 1.4;
-}
-
-.card-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.review-count {
-    font-size: 0.8rem;
-    color: #64748b;
-}
-
-.due-time {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #64748b;
-}
-
-/* Tab Bar */
-.tab-bar {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid #e2e8f0;
-}
-
-.tab-divider {
-    height: 1px;
-    background: #e2e8f0;
-}
-
-.tab-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 24px 8px;
-    height: 50px;
-    max-width: 100%;
-    gap: 0;
-}
-
-.tab-button {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-    flex-shrink: 0;
-}
-
-.tab-button.active {
-    background: rgba(59, 130, 246, 0.1);
-}
-
-.tab-icon {
-    font-size: 20px;
-    color: #64748b;
-    font-weight: 400;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tab-button.active .tab-icon {
-    color: #3b82f6;
-}
-
-.add-button {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #3b82f6;
-    border-radius: 22px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    flex-shrink: 0;
-}
-
-.add-button:hover {
-    transform: scale(1.05);
-    background: #2563eb;
-}
-
-.add-icon {
-    font-size: 24px;
-    color: white;
-    font-weight: 300;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tab-spacer {
-    flex: 1;
-    min-width: 0;
+    display: block;
 }
 
 @keyframes float {
@@ -578,9 +362,8 @@ body {
         gap: 3rem;
     }
     
-    .phone-mockup {
+    .iphone-screenshot {
         width: 280px;
-        height: 560px;
     }
 }
 
@@ -617,9 +400,8 @@ body {
         display: flex;
     }
     
-    .phone-mockup {
+    .iphone-screenshot {
         width: 250px;
-        height: 500px;
     }
     
     .features-grid {
@@ -655,9 +437,8 @@ body {
         font-size: 1rem;
     }
     
-    .phone-mockup {
-        width: 250px;
-        height: 500px;
+    .iphone-screenshot {
+        width: 220px;
     }
     
     .app-store-button img {
