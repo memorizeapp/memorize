@@ -64,9 +64,10 @@ body {
 }
 
 .logo-image {
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo h2 {
@@ -86,6 +87,7 @@ body {
     color: #64748b;
     font-weight: 500;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -164,7 +166,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     gap: 4rem;
     align-items: center;
 }
@@ -173,13 +175,14 @@ body {
     font-size: 3.0rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     opacity: 0.9;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
@@ -187,7 +190,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .app-store-button {
@@ -214,10 +217,14 @@ body {
     width: 300px;
     height: auto;
     max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
     display: block;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes float {
@@ -356,6 +363,12 @@ body {
     color: #94a3b8;
 }
 
+.copyright-small {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-container {
@@ -377,11 +390,13 @@ body {
     
     .hero-content h1 {
         font-size: 2.5rem;
-        line-height: 1.1;
+        line-height: 1.2;
+        margin-bottom: 2rem;
     }
     
     .hero-subtitle {
         font-size: 1.1rem;
+        margin-bottom: 1.5rem;
     }
     
     .download-section {
@@ -431,10 +446,13 @@ body {
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
     }
     
     .hero-subtitle {
         font-size: 1rem;
+        margin-bottom: 1.25rem;
     }
     
     .iphone-screenshot {
@@ -475,7 +493,8 @@ body {
     }
     
     .hero {
-        padding: 100px 0 60px;
+        padding: 80px 0 60px;
+        min-height: 100vh;
     }
     
     .features {
